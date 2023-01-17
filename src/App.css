@@ -1,0 +1,198 @@
+.App {
+      background: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.header {
+      background-image: url("./assets/header.jpg");
+      background-position: center;
+      background-size: 500px;
+      background-repeat: no-repeat;
+      height: 260px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.empty {
+      background-image: url("./assets/empty.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 80vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: gray;
+}
+.header img {
+      width: 80%;
+}
+.form {
+      width: 80%;
+      margin: 20px;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+}
+.form input {
+      padding: 20px;
+      border-radius: 20px;
+      font-size: 1em;
+      color: white;
+      font-weight: bold;
+      width: 100%;
+      box-shadow: 1px 1px 10px rgb(7, 133, 39);
+      background: transparent;
+}
+.form input:focus {
+      background: rgba(19, 206, 19, 0.366);
+}
+.form button {
+      background: black;
+      color: var(--main_effect);
+      font-size: 1em;
+      padding: 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      box-shadow: 1px 1px 10px rgb(7, 133, 39);
+      transition: all ease 1s;
+}
+.form button:hover {
+      transform: translateY(2px);
+      background: var(--main_effect);
+      color: white;
+}
+.search_box {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      top: 60px;
+      left: 0;
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.727);
+      box-shadow: 1px 1px 10px rgb(7, 133, 39);
+}
+.search_item {
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 20px;
+      font-size: 1em;
+      color: white;
+      font-weight: bold;
+}
+.location {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      background: var(--main);
+      min-height: 150px;
+      margin-bottom: 40px;
+}
+.location h2 {
+      font-size: 2em;
+      font-weight: bold;
+      color: var(--main_effect);
+}
+.location span {
+      font-size: 1em;
+      font-weight: bold;
+      color: var(--color_text);
+}
+.location h3 {
+      font-size: 2em;
+      font-weight: bold;
+      color: var(--secondary_effect);
+}
+.location_info {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+}
+.gallery {
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, 300px);
+      gap: 1rem;
+}
+.card {
+      min-width: 200px;
+      border-radius: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--main);
+      box-shadow: 1px 1px 10px rgb(7, 133, 39);
+      margin: 10px;
+      opacity: 0.7;
+      transition: all ease 0.5s;
+}
+.card:hover {
+      transform: scale(1.05);
+      opacity: 1;
+}
+.card img {
+      padding: 10px;
+      object-fit: contain;
+      width: 280px;
+      border-radius: 20px;
+}
+.card_status {
+      background: rgb(40, 70, 39);
+      position: absolute;
+      top: 20px;
+      left: 0px;
+      width: 90px;
+      border-radius: 0px 20px 20px 0px;
+      padding-left: 20px;
+}
+.card_info {
+      padding: 10px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+}
+.card_info h2 {
+      align-self: center;
+      font-size: 1.5em;
+}
+.card_info_details {
+      align-self: flex-start;
+}
+.card_info_details span {
+      font-weight: bold;
+      color: var(--main_effect);
+}
+.card_info_details p {
+      font-weight: bold;
+      color: var(--secondary_effect);
+}
+.page {
+      background: gray;
+      padding: 0 10px;
+      border-radius: 100%;
+}
+.footer {
+      background-image: url("./assets/footer.jpg");
+      background-size: 100px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 80px;
+}
+.footer_extra {
+      background-color: rgba(0, 0, 0, 0.822);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
